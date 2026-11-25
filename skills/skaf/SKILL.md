@@ -34,6 +34,7 @@ Most people don't know which tools a job needs, or that a smarter way needs fewe
 - Flag the hard or risky steps, and the point where a pro is worth it.
 - Then the **tool list**. Per tool: what it is for (one line), whether they likely own it, and a simpler alternative if there is one. Leave out what every home has (screwdriver, tape measure) unless the job needs a special one.
 - Then the **materials list** with quantities and waste (+10 % on boards, spare screws).
+- **Mål først** when a cut or an order depends on a size: lay a folding rule (tommelstok) along the measurement, photograph it straight on with both ends in frame, and send the photo. Read the size from the scale (about ±5 mm), and give cut sizes only after two readings of the same size agree within 5 mm.
 - Show the plan and ask: "Skal jeg finde priser på det, du ikke har?" Don't search before the OK. They may change the plan first.
 
 ## 3. Source (only tools they don't own, and all materials)
@@ -46,7 +47,7 @@ Search in parallel, Danish item names, about 2 searches per row.
 
 ## 4. Answer
 1. The plan from step 2 (short; they have seen it).
-2. One table, Danish, tools first:
+2. One line "Priser set <dd.mm.åååå>" (today's date), then one table, Danish, tools first:
 
 | Ting | Antal | Bedste valg | Pris | Afstand | Leje/køb | Link |
 |---|---|---|---|---|---|---|

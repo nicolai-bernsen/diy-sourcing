@@ -2,6 +2,8 @@
 
 Job: lowered gypsum ceiling, kitchen + entrance about 13.8 m², 2300 København S. Run by following `skills/skaf/SKILL.md` with plain web search. Acceptance check (NB-486): the gipshejs row finds the cheap Hygglo option near Amager (39-65 kr/day). **Passed.**
 
+Priser set 21.11.2026
+
 | Ting | Antal | Bedste valg | Pris | Afstand | Leje/køb | Link |
 |---|---|---|---|---|---|---|
 | Gipshejs | 1 | Hygglo, privat udlejer (Tårnby, Kastrup) | 39-65 kr/dag | ca. 1-7 km | Leje | [hygglo.dk](https://www.hygglo.dk/category/1792-gipshejs/region-hovedstaden) |

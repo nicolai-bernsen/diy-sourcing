@@ -18,7 +18,7 @@ Worked runs, one per mode, are in [`examples/`](examples): a damp corner (diagno
 
 ## Install
 
-Download [`skills/skaf/SKILL.md`](skills/skaf/SKILL.md) into a folder named `skaf`, zip the folder, and upload it in Claude under Settings → Capabilities → Skills. Web search must be on for the price step. In Claude Code, copy the folder to `~/.claude/skills/skaf`.
+Download `skaf.zip` from the latest [release](https://github.com/nicolai-bernsen/diy-sourcing/releases/latest) and upload it in Claude under Settings → Capabilities → Skills. (Or put [`skills/skaf/SKILL.md`](skills/skaf/SKILL.md) in a folder named `skaf` and zip it yourself.) Web search must be on for the price step. In Claude Code, copy the folder to `~/.claude/skills/skaf`.
 
 ## Status
 
