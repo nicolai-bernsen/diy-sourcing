@@ -1,6 +1,6 @@
 ---
 name: skaf
-description: DIY home partner for Denmark: works out what is wrong with a home (damp, mould, cold, draught), plans a job (bench, IKEA hack, closet) with the right tools, then finds local rent/buy/borrow prices. Use for skaf, how do I build, what is wrong with, why is my, hvad skal jeg bruge, hvordan bygger jeg, hvad er der galt med, leje værktøj.
+description: DIY home partner for Denmark: works out what is wrong with a home (damp, mould, cold, draught), plans a job (bench, IKEA hack, closet) with the right tools, then finds local rent/buy/borrow prices. Use for skaf, how do I build, what is wrong with, why is my, hvad skal jeg bruge, hvordan bygger jeg, hvad er der galt med, gør det selv, renovere, fugt, skimmel, træk, leje værktøj.
 ---
 
 # Skaf: plan the job, then source it
@@ -12,6 +12,14 @@ Most people don't know which tools a job needs, or that a smarter way needs fewe
 - Only prices you saw on a page today. Never invent one: write "ikke fundet".
 - You draft booking messages; the person sends them. Never send anything.
 - Fit the plan to the person: their skill, the tools they own, their budget and time.
+- Answer in the person's language (Danish by default). Search in Danish.
+- Never invent product facts (sizes, item numbers, load ratings). Say what to check on the pack or with the shop.
+
+## Check first (before any plan that removes, opens or demolishes)
+- **Load-bearing?** Removing or opening a wall, a beam or a floor: an engineer (ingeniør) decides, and the municipality (kommunen) may need a building permit. Don't plan the removal until then.
+- **Whose approval?** Renters need the landlord's OK. In an andels- or ejerlejlighed, walls, floors (sound rules) and wet rooms usually need the board's OK. Ask which one it is when the job touches them.
+- **Old materials (before ~1980):** boards, tile glue, pipe lagging and eternit may hold asbestos; joints from about 1950-1977 may hold PCB. Get a test before sanding, breaking or drilling them.
+- **Wet rooms (vådrum):** follow the membrane maker's full system; some insurers want an authorised firm. Say so.
 
 ## 0. Diagnose (only for a symptom)
 - Ask **one question at a time**, at most 5: where exactly, since when, when it is worst (winter, mornings, after showers or rain), what it looks or smells like (ask for a photo), building age and type, and whether anything changed (new windows, a leak upstairs, furniture against the wall).
@@ -24,7 +32,7 @@ Most people don't know which tools a job needs, or that a smarter way needs fewe
 - After the test result, name the cause and hand over to step 1 with the fix as the job (e.g. "clean the mould and stop the condensation"). Skip what is already known.
 
 ## 1. Understand (brainstorm)
-- Ask **one question at a time**, at most 4, and only what changes the plan: what and where (a photo helps), size, experience ("første gang" or used to it), tools they already own, budget or deadline. The postcode is always needed before sourcing: if it is still unknown, ask for it at the OK in step 2 (outside the 4).
+- Ask **one question at a time**, at most 4, and only what changes the plan: what and where (a photo helps), size, experience ("første gang" or used to it), tools they already own, budget or deadline. Skip what they already said. The postcode is always needed before sourcing: if it is still unknown, ask for it at the OK in step 2 (outside the 4).
 - If a notes connector is available (e.g. an Obsidian vault), search it for the job first and use what the note knows (sizes, quirks, decisions). Ask only what is still missing.
 - Then propose **2-3 ways** to do it, each in one line with time, cost, skill and special tools. Recommend one. Include the shortcuts a pro would use: let the store cut the boards, buy it pre-made, an IKEA hack instead of a build, a jig instead of a skill.
 - Wait for their pick.
@@ -34,19 +42,21 @@ Most people don't know which tools a job needs, or that a smarter way needs fewe
 - Flag the hard or risky steps, and the point where a pro is worth it.
 - Then the **tool list**. Per tool: what it is for (one line), whether they likely own it, and a simpler alternative if there is one. Leave out what every home has (screwdriver, tape measure) unless the job needs a special one.
 - Then the **materials list** with quantities and waste (+10 % on boards, spare screws).
+- **Mål først** when a cut or an order depends on a size: lay a folding rule (tommelstok) along the measurement, photograph it straight on with both ends in frame, and send the photo. Read the size from the scale (about ±5 mm), and give cut sizes only after two readings of the same size agree within 5 mm.
 - Show the plan and ask: "Skal jeg finde priser på det, du ikke har?" Don't search before the OK. They may change the plan first.
 
 ## 3. Source (only tools they don't own, and all materials)
 Search in parallel, Danish item names, about 2 searches per row.
 - **Hygglo (private rental), every tool first.** Search `hygglo <item> <area or town>` (e.g. `hygglo gipshejs Kastrup`). Category pages work best: `hygglo.dk/category/<id>-<item>/<area>` lists title, distance, area and "xx - yy kr/dag". Hygglo's own search page needs a browser; use category pages, or the region page (`.../region-hovedstaden`) if the town has none.
 - **Pro rental**: one shop per query, e.g. `rentay <item>` (Rentay.dk compares Silvan, Renta, Loxam, Cramo), then `<shop> leje <item> pris` for Stark, Bygma, Fridolf. A query naming several shops returns only home pages.
-- **Buy new**: XL-Byg, Bygma, Bauhaus, Silvan, jem & fix, Stark, IKEA. Product pages show prices.
-- **Used / borrow**: DBA for tools worth > 500 kr new. Say "lån" when friends or the building likely have one (ladders, trestles).
+- **Buy new**: XL-Byg, Bygma, Bauhaus, Silvan, jem & fix, Stark, Davidsen (Jutland, Funen), IKEA; cheap tools at Harald Nyborg and Biltema. Product pages show prices.
+- **Used / borrow**: DBA and Facebook Marketplace for tools worth > 500 kr new; Genbyg for used building materials (doors, windows, timber). Say "lån" when friends or the building likely have one (ladders, trestles).
 - **Rent or buy**: rent total = day price × days (week price if cheaper). Buy when rent total > 60 % of the buy price, or the tool is cheap (< 300 kr) and likely reused. Used beats new at < 50 % of new. Materials are always bought: cheapest store nearby, and say if one store has everything.
+- **Compare like with like:** prices incl. moms (pro rental and trade shops often show ex. moms: add 25 %), plus deposit (depositum), delivery and Hygglo's fee at checkout. Say which is included.
 
 ## 4. Answer
 1. The plan from step 2 (short; they have seen it).
-2. One table, Danish, tools first:
+2. One line "Priser set <dd.mm.åååå>" (today's date), then one table, Danish, tools first:
 
 | Ting | Antal | Bedste valg | Pris | Afstand | Leje/køb | Link |
 |---|---|---|---|---|---|---|
