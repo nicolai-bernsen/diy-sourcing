@@ -14,8 +14,15 @@ for f in skills/*/SKILL.md; do
   dir=$(basename "$(dirname "$f")")
   [ "$(head -1 "$f")" = "---" ] || fail "$f: no frontmatter"
   grep -qx "name: $dir" "$f" || fail "$f: name must be '$dir'"
+  case "$dir" in *claude*|*anthropic*) fail "$f: reserved word in skill name";; esac
   desc=$(grep -m1 '^description: ' "$f" | cut -c14-)
   case "$desc" in ''|'>'*|'|'*) fail "$f: description must be one non-empty line";; esac
   [ "${#desc}" -lt 1024 ] || fail "$f: description over 1024 chars"
+done
+# 3) Eval files are valid JSON (skipped if python3 is missing).
+for f in skills/*/evals/evals.json; do
+  [ -f "$f" ] || continue
+  command -v python3 >/dev/null || break
+  python3 -c 'import json,sys; json.load(open(sys.argv[1]))' "$f" || fail "$f: invalid JSON"
 done
 echo "check: ok"

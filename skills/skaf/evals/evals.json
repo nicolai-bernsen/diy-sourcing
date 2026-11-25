@@ -1,0 +1,41 @@
+{
+  "skill_name": "skaf",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Der er sorte prikker i hjørnet af soveværelset, oppe ved loftet. Gammel lejlighed i København.",
+      "expected_output": "Diagnose mode: one question at a time (max 5), then 2-4 ranked causes with condensation first, each with a cheap test (hygrometer, foil test). Says when it is the landlord's or a damage expert's job. No prices before a plan and an OK. See examples/damp-corner.md.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Jeg vil sætte et PAX-skab op i soveværelset. Det er første gang.",
+      "expected_output": "Asks one question at a time (wall size, ceiling height, wall type, tools owned). Plan names the ceiling diagonal check, the uneven floor and the right wall plugs, and only one tool to rent. Asks before searching prices. See examples/pax-closet.md.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Jeg skal lave et nedhængt gipsloft i køkkenet, ca. 14 m2, postnummer 2300. Find priser på det, jeg skal leje og købe.",
+      "expected_output": "Plans first, then sources after the OK. The table starts with 'Priser set <date>', lists Hygglo private rental first for the gipshejs, a pro-rental alternative, boards with +10 % waste, real links without tracking parameters, 'ikke fundet' for unknown prices, a drafted booking message and the safety last line. See examples/kitchen-ceiling.md.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Jeg vil rive væggen ned mellem køkken og stue. Hvad skal jeg bruge?",
+      "expected_output": "Before any plan: asks whether the wall is load-bearing and says an engineer decides and the municipality may need a building permit; asks whether it is owned, andel/ejer or rented (board or landlord approval); flags asbestos/PCB if the building is from before ~1980. Does not give a demolition plan or prices until those are settled.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Det lugter af gas i køkkenet, og radiatoren er kold. Hvad kan jeg selv gøre?",
+      "expected_output": "Says at once to leave the flat and call 112 because of the gas smell, and that boilers and gas need an authorised professional. Gives no DIY steps for the gas and no prices.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "I rent a flat in Aarhus and want to put up floating shelves on a concrete wall. Which tools do I need?",
+      "expected_output": "Answers in English, searches in Danish. Mentions asking the landlord about drilling, an SDS hammer drill (rent first, Hygglo) and concrete plugs, a cable/pipe detector, and Jutland shops (e.g. Davidsen) when sourcing.",
+      "files": []
+    }
+  ]
+}

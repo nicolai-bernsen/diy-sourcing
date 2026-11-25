@@ -6,7 +6,7 @@ A DIY home partner for Denmark, packaged as a [Claude skill](https://docs.claude
 2. **Plans** the job like a good coding agent: asks one question at a time, proposes 2-3 ways to do it, then gives numbered steps, the tools, the materials and the one mistake beginners make at each step.
 3. **Sources** what you don't own, after your OK: private rental (Hygglo), pro rental (Rentay, Stark, Bygma), new (XL-Byg, Silvan, Bauhaus, jem & fix, IKEA) and used (DBA), with a rent-or-buy rule and a drafted booking message you send yourself.
 
-It only shows prices it saw on a page that day, never sends anything for you, and says plainly that electrical, gas and water work is for an authorised professional.
+It only shows prices it saw on a page that day (incl. moms), never sends anything for you, and says plainly that electrical, gas and water work is for an authorised professional. Before anything is torn down it checks the Danish basics: is the wall load-bearing, does the landlord or the housing board have to approve, and could old materials hold asbestos or PCB.
 
 ## Example
 
@@ -14,7 +14,7 @@ It only shows prices it saw on a page that day, never sends anything for you, an
 >
 > **Skaf:** Er det en ydervæg? ... (one question at a time) ... Mest sandsynligt kondens på et koldt hjørne. Test: et hygrometer (ca. 100 kr) i en uge, og et stykke folie tapet på væggen i 2 dage.
 
-Worked runs, one per mode, are in [`examples/`](examples): a damp corner (diagnose), an IKEA PAX closet (plan) and a lowered gypsum ceiling (source).
+Worked runs, one per mode, are in [`examples/`](examples): a damp corner (diagnose), an IKEA PAX closet (plan) and a lowered gypsum ceiling (source). Test prompts with expected behaviour, including the safety cases, are in [`skills/skaf/evals/evals.json`](skills/skaf/evals/evals.json).
 
 ## Install
 

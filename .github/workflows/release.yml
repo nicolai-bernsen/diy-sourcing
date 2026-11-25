@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: cd skills && zip -r ../skaf.zip skaf
+      - run: cd skills && zip -r ../skaf.zip skaf -x 'skaf/evals/*'
       - run: gh release upload "$TAG" skaf.zip --clobber
         env:
           GH_TOKEN: ${{ github.token }}
